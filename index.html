@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Excel</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="upper-tool-bar">
+      <div class="upper-tool-bar__option">Home</div>
+      <div class="upper-tool-bar__option">File</div>
+      <div class="upper-tool-bar__option">Insert</div>
+      <div class="upper-tool-bar__option">Layout</div>
+      <div class="upper-tool-bar__option">Help</div>   
+    </div>
+    <div class="lower-tool-bar">
+        <span class="material-icons">
+            content_copy
+        </span>
+        <span class="material-icons">
+                content_cut
+        </span>
+        <span class="material-icons">
+            content_paste
+        </span>
+        <select value="font" class="font-family">
+            <option value="monospace">Monospace</option> 
+            <option value="times-new-roman">Times New Roman</option>
+            <option value="sans-serif">Sans-serif</option>
+            <option value="arial">Arial</option>
+        </select>
+        <select value="font-size" class="font-size">
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+        </select>
+        <span class="material-icons bold">
+            format_bold
+            </span>
+            <span class="material-icons italic">
+                format_italic
+            </span>
+            <span class="material-icons underline">
+                    format_underlined
+            </span>
+            <span class="material-icons align left">
+                        format_align_left
+            </span>
+            <span class="material-icons align center">
+                format_align_center
+            </span>
+            <span class="material-icons align right">
+                format_align_right
+            </span>
+            <div class="color-container">
+                <span class="material-icons">
+                    format_color_text
+                    </span>
+                <input type="color" class="color">    
+            </div>
+            <div class="color-container">
+                <span class="material-icons">
+                    format_color_fill
+                </span>
+                <input type="color" class="color bg-color">                         
+            </div>
+            </div>
+            
+    <div class="formula-container">
+        <input class="formula-container__address-bar" readonly>
+        <img width="25" height="25" src="https://img.icons8.com/ios/50/formula-fx.png" alt="formula-fx"/>
+        <input class="formula-container__formula-bar">
+    </div>
+    <div class="grid-container">
+      <div class="grid-container__dummy-box"></div>
+      <div class="grid-container__row-container"></div>
+      <div class="grid-container__cells-container">
+        <div class="grid-container__col-container"></div>
+      </div>  
+    </div>
+    <div class="sheets-container">
+        <span class="material-icons">
+            post_add
+        </span>
+        <div class="sheets-container__sheets">Sheet 1</div>
+    </div>
+    <script src="app.js"></script>
+    <script src="cell-props.js"></script>
+    <script src="formulaEvaluation.js"></script>  
+</body>
+</html>
